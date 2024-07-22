@@ -164,7 +164,7 @@ class VideoPlayerApp:
                 last_popup_check = time.time()
 
             self.pause_and_play()
-            time.sleep(10)
+            time.sleep(1)
 
     def switch_to_next_video(self, video_elements, current_index):
         next_index = (current_index + 1) % len(video_elements)
