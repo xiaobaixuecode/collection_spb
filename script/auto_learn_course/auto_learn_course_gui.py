@@ -145,6 +145,7 @@ class VideoPlayerApp:
 
     def play_single_video(self, video_elements, current_video_index, max_play_time, popup_check_interval):
         video_elements[current_video_index].click()
+        self.execute_initial_scripts()
         time.sleep(3)
         self.pause_and_play()
         
